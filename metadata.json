@@ -1,0 +1,6 @@
+{
+  "name": "SafeTour — Tourist Safety & Incident Response",
+  "description": "Smart tourist safety monitoring, temporary digital ID, geofence alerts, scheduled check-ins, and emergency SOS dispatch application.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

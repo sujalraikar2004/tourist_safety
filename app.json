@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "SafeTour — Tourist Safety & Incident Response",
+    "slug": "safetour-tourist-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "safetour",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f7f9fb"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.safetour.tourist",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SafeTour needs foreground location to display nearby safety zones, geofence corridors, and local assistance outposts.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SafeTour uses continuous corridor telemetry during registered trips to detect severe route divergences and deliver automatic risk-zone warnings.",
+        "NSMotionUsageDescription": "SafeTour detects abrupt falls or sudden changes in elevation along mountain trails."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0e1c2f"
+      },
+      "package": "com.safetour.tourist",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "POST_NOTIFICATIONS",
+        "VIBRATE",
+        "CALL_PHONE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow SafeTour to monitor your safety corridor while traveling in remote zones."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
